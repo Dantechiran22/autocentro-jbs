@@ -1,0 +1,1376 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AutoCentro JBS | Especialistas en Electrónica Automotriz en Quito</title>
+  <meta name="description" content="Taller especializado en electrónica automotriz en Quito. Reparación de sistemas eléctricos, diagnóstico computarizado, instalación de GPS y alarmas. Servicio garantizado.">
+  <meta name="keywords" content="electrónica automotriz, reparación de autos, taller mecánico Quito, diagnóstico vehicular, GPS para autos, alarmas vehiculares">
+  <meta name="author" content="AutoCentro JBS">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.autocentrojbs.com">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <!-- Structured data for Google -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "AutoCentro JBS",
+      "image": "https://www.autocentrojbs.com/images/logo.jpg",
+      "@id": "https://www.autocentrojbs.com",
+      "url": "https://www.autocentrojbs.com",
+      "telephone": "+593991364216",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Av. de la Prensa 5190",
+        "addressLocality": "Quito",
+        "addressRegion": "Pichincha",
+        "postalCode": "170104",
+        "addressCountry": "EC"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "-0.180653",
+        "longitude": "-78.467834"
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday"
+        ],
+        "opens": "09:00",
+        "closes": "18:00"
+      }
+    }
+  </script>
+  <style>
+    :root {
+      --primary: #0D47A1;
+      --secondary: #E53935;
+      --accent: #FFC107;
+      --dark: #161B22;
+      --light: #F5F5F5;
+      --gray: #8B949E;
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+      100% { transform: scale(1); }
+    }
+    
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: var(--light);
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1494972308805-463bc619d34e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      padding: 60px 20px;
+      color: white;
+    }
+    
+    .logo-container {
+      margin-bottom: 10px;
+    }
+    
+    .logo {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+    }
+    
+    .tagline {
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: -20px 0 30px;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+    }
+    
+    nav {
+      background-color: var(--primary);
+      padding: 15px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      flex-wrap: wrap;
+    }
+    
+    .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+    
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: all 0.3s ease;
+      padding: 5px 0;
+      position: relative;
+    }
+    
+    .nav-links a:hover {
+      color: var(--accent);
+      transform: translateY(-2px);
+    }
+    
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: var(--accent);
+      transition: width 0.3s;
+    }
+    
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+    
+    .contact-nav {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    
+    .whatsapp-btn {
+      background-color: #25D366;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: transform 0.3s;
+    }
+    
+    .whatsapp-btn:hover {
+      transform: translateY(-2px);
+    }
+    
+    section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      animation: fadeInUp 0.6s ease forwards;
+      opacity: 0;
+    }
+    
+    section:nth-child(1) { animation-delay: 0.1s; }
+    section:nth-child(2) { animation-delay: 0.3s; }
+    section:nth-child(3) { animation-delay: 0.5s; }
+    section:nth-child(4) { animation-delay: 0.7s; }
+    
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      color: var(--primary);
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      display: block;
+      width: 80px;
+      height: 4px;
+      background: var(--accent);
+      margin: 15px auto 0;
+    }
+    
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .service-card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1);
+    }
+    
+    .service-card:hover {
+      transform: perspective(1000px) rotateX(5deg) rotateY(0deg) scale(1.03);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
+    
+    .service-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    
+    .service-content {
+      padding: 20px;
+    }
+    
+    .service-title {
+      color: var(--primary);
+      margin-top: 0;
+      font-size: 1.3rem;
+    }
+    
+    .service-description {
+      color: var(--gray);
+      margin-bottom: 20px;
+    }
+    
+    .service-btn {
+      background-color: var(--primary);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 500;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    
+    .service-btn:hover {
+      background-color: var(--secondary);
+    }
+    
+    .promo-banner {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 40px;
+      border-radius: 10px;
+      text-align: center;
+      margin: 40px auto;
+      max-width: 1000px;
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .promo-banner::before {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: -50px;
+      width: 200px;
+      height: 200px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+    }
+    
+    .promo-banner::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 250px;
+      height: 250px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+    }
+    
+    .promo-title {
+      font-size: 2rem;
+      margin-top: 0;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .promo-text {
+      font-size: 1.2rem;
+      margin-bottom: 25px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .promo-btn {
+      background-color: var(--accent);
+      color: #333;
+      padding: 12px 30px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      display: inline-block;
+      transition: transform 0.3s;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .promo-btn:hover {
+      transform: scale(1.05);
+    }
+    
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+    }
+    
+    .testimonial-card {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .testimonial-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .testimonial-rating {
+      margin-bottom: 15px;
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 20px;
+      position: relative;
+    }
+    
+    .testimonial-text::before {
+      content: '"';
+      font-size: 4rem;
+      color: rgba(13, 71, 161, 0.1);
+      position: absolute;
+      top: -20px;
+      left: -10px;
+      line-height: 1;
+    }
+    
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+    }
+    
+    .contact-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 40px;
+    }
+    
+    .contact-info {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .contact-info h3 {
+      color: var(--primary);
+      margin-top: 0;
+    }
+    
+    .contact-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    
+    .contact-icon {
+      background-color: var(--accent);
+      color: #333;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      flex-shrink: 0;
+    }
+    
+    .contact-form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    .form-group {
+      margin-bottom: 20px;
+    }
+    
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+    
+    textarea.form-control {
+      min-height: 120px;
+      resize: vertical;
+    }
+    
+    .submit-btn {
+      background-color: var(--primary);
+      color: white;
+      border: none;
+      padding: 12px 30px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+    
+    .submit-btn:hover {
+      background-color: var(--secondary);
+    }
+    
+    footer {
+      background-color: var(--dark);
+      color: white;
+      padding: 50px 20px 20px;
+      text-align: center;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      text-align: left;
+    }
+    
+    .footer-logo {
+      max-width: 200px;
+      margin-bottom: 20px;
+    }
+    
+    .footer-about p {
+      color: var(--gray);
+    }
+    
+    .footer-links h3, .footer-contact h3 {
+      color: white;
+      margin-top: 0;
+    }
+    
+    .footer-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-links li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-links a {
+      color: var(--gray);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    
+    .footer-links a:hover {
+      color: var(--accent);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    
+    .social-link {
+      color: white;
+      background-color: rgba(255,255,255,0.1);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+    }
+    
+    .social-link.facebook:hover {
+      background-color: #1877F2;
+      transform: translateY(-3px);
+    }
+    
+    .social-link.instagram:hover {
+      background: linear-gradient(45deg, #405DE6, #5851DB, #833AB4, #C13584, #E1306C, #FD1D1D);
+      transform: translateY(-3px);
+    }
+    
+    .social-link.tiktok:hover {
+      background-color: #000000;
+      transform: translateY(-3px);
+    }
+    
+    .social-link.whatsapp:hover {
+      background-color: #25D366;
+      transform: translateY(-3px);
+    }
+    
+    .social-link.youtube:hover {
+      background-color: #FF0000;
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: var(--gray);
+    }
+    
+    /* Estilos para mensajes del formulario */
+    .form-message {
+      margin: 20px 0;
+      padding: 15px;
+      border-radius: 5px;
+      display: none;
+    }
+    
+    .form-success {
+      background: #E8F5E9;
+      color: #2E7D32;
+      display: none;
+    }
+    
+    .form-error {
+      background: #FFEBEE;
+      color: #C62828;
+      display: none;
+    }
+    
+    /* Chat de WhatsApp mejorado */
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 40px;
+      right: 40px;
+      background-color: #25d366;
+      color: #FFF;
+      border-radius: 50px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 3px #999;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      animation: pulse 1.5s infinite;
+    }
+    
+    .whatsapp-float:hover {
+      background-color: #128C7E;
+      animation: none;
+    }
+    
+    /* Estilos para el asistente virtual */
+    #chatbot-container {
+      position: fixed;
+      bottom: 100px;
+      right: 30px;
+      width: 350px;
+      max-width: 90%;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      z-index: 999;
+      display: none;
+    }
+    
+    #chatbot-container > div:first-child {
+      background: var(--primary);
+      color: white;
+      padding: 15px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    #chatbot-container h4 {
+      margin: 0;
+    }
+    
+    #close-chatbot {
+      background: none;
+      border: none;
+      color: white;
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+    
+    #chatbot-messages {
+      height: 300px;
+      overflow-y: auto;
+      padding: 15px;
+    }
+    
+    #chatbot-messages div {
+      background: #f1f1f1;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      max-width: 80%;
+    }
+    
+    #chatbot-messages div.user {
+      background: var(--primary);
+      color: white;
+      margin-left: auto;
+    }
+    
+    #chatbot-messages p {
+      margin: 0;
+    }
+    
+    #chatbot-input-container {
+      padding: 15px;
+      border-top: 1px solid #eee;
+      display: flex;
+    }
+    
+    #chatbot-input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+    
+    #send-chatbot {
+      background: var(--primary);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 0 15px;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+    
+    #open-chatbot {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background: var(--primary);
+      color: white;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: none;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      z-index: 999;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    #open-chatbot i {
+      font-size: 1.5rem;
+    }
+    
+    @media (max-width: 768px) {
+      .nav-container {
+        flex-direction: column;
+        gap: 15px;
+      }
+      
+      .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .contact-nav {
+        justify-content: center;
+      }
+      
+      .logo {
+        max-width: 280px;
+      }
+      
+      .tagline {
+        font-size: 1.2rem;
+        margin-top: -10px;
+      }
+      
+      .contact-container {
+        grid-template-columns: 1fr;
+      }
+      
+      .services-grid, .testimonials {
+        grid-template-columns: 1fr;
+      }
+      
+      .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        font-size: 25px;
+      }
+      
+      #chatbot-container {
+        width: 90%;
+        right: 5%;
+        bottom: 80px;
+      }
+      
+      #open-chatbot {
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo-container">
+      <img src="02e34cb5-7b39-4f10-ab05-c50dc37df2f0.jfif" alt="AutoCentro JBS - Tecnología y seguridad para tu auto" class="logo">
+    </div>
+    <h1 style="display: none;">AutoCentro JBS</h1>
+    <p class="tagline">Tecnología y seguridad para tu auto en un solo lugar</p>
+    <a href="#citas" class="promo-btn">¡Reserva tu cita ahora!</a>
+  </header>
+
+  <nav>
+    <div class="nav-container">
+      <div class="nav-links">
+        <a href="#inicio">Inicio</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#productos">Productos</a>
+        <a href="#citas">Citas Online</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <div class="contact-nav">
+        <a href="https://wa.me/593991364216" class="whatsapp-btn">
+          <i class="fab fa-whatsapp"></i> WhatsApp
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <section id="servicios">
+    <h2 class="section-title">Nuestros Servicios</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Técnico reparando sistema eléctrico" class="service-img">
+        <div class="service-content">
+          <h3 class="service-title">Sistema Eléctrico Completo</h3>
+          <p class="service-description">Reparación profesional de:</p>
+          <ul style="padding-left: 20px; margin-top: 10px;">
+            <li>Vidrios eléctricos</li>
+            <li>Bloqueo central</li>
+            <li>Cableado automotriz</li>
+            <li>Computadora automotriz</li>
+            <li>Luces y sistema de iluminación</li>
+          </ul>
+          <a href="#contacto" class="service-btn">Cotizar servicio</a>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="Diagnóstico electrónico" class="service-img">
+        <div class="service-content">
+          <h3 class="service-title">Diagnóstico Electrónico</h3>
+          <p class="service-description">Identificamos fallas con equipos de última generación para una reparación precisa.</p>
+          <a href="#contacto" class="service-btn">Cotizar servicio</a>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80" alt="GPS y alarmas" class="service-img">
+        <div class="service-content">
+          <h3 class="service-title">GPS y Alarmas</h3>
+          <p class="service-description">Instalación profesional de sistemas de rastreo y seguridad vehicular.</p>
+          <a href="#contacto" class="service-btn">Cotizar servicio</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="productos" style="background-color: #f8f9fa;">
+    <h2 class="section-title">Productos Destacados</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1603732551681-2e91159b9dc2?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Repuestos electrónicos y mecánicos" class="service-img">
+        <div class="service-content">
+          <h3 class="service-title">Repuestos Electrónicos y Mecánicos</h3>
+          <ul style="padding-left: 20px;">
+            <li>Sensores nuevos (O2, ABS, estacionamiento)</li>
+            <li>Alternadores y arranques</li>
+            <li>Bombas de combustible</li>
+            <li>Bolsinas y cable de bolsinas</li>
+            <li>Cintas para airbag</li>
+          </ul>
+          <a href="#contacto" class="service-btn">Consultar disponibilidad</a>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1591488320449-011701bb6704?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Accesorios tecnológicos" class="service-img">
+        <div class="service-content">
+          <h3 class="service-title">Audio y Seguridad</h3>
+          <ul style="padding-left: 20px;">
+            <li>Radios multimedia con Bluetooth</li>
+            <li>Android Auto y Apple CarPlay</li>
+            <li>Sistemas GPS y alarmas</li>
+            <li>Cámaras de reversa</li>
+            <li>Sistemas de seguridad vehicular</li>
+          </ul>
+          <a href="#contacto" class="service-btn">Ver catálogo</a>
+        </div>
+      </div>
+      
+      <div class="service-card">
+        <img src="https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" alt="Carro en taller mecánico" class="service-img">
+        <div class="service-content">
+          <h3 class="service-title">Combos con Servicios</h3>
+          <div style="background: #FFF8E1; padding: 15px; border-radius: 8px; margin-bottom: 15px;">
+            <h4 style="margin-top: 0; color: var(--primary);">Pack Seguridad Total</h4>
+            <p>Diagnóstico + reparación de airbag + alarma básica</p>
+          </div>
+          <div style="background: #E8F5E9; padding: 15px; border-radius: 8px;">
+            <h4 style="margin-top: 0; color: var(--primary);">Pack Audio Premium</h4>
+            <p>Radio Bluetooth + instalación + cables de alta calidad</p>
+          </div>
+          <a href="#contacto" class="service-btn" style="margin-top: 15px;">Solicitar promociones</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="citas">
+    <h2 class="section-title">Agenda tu Cita Online</h2>
+    <div style="max-width: 800px; margin: 0 auto; background: white; padding: 30px; border-radius: 10px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+      <form id="appointmentForm" action="https://formsubmit.co/jbsautoservicio@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="Nueva cita desde el sitio web">
+        <input type="hidden" name="_template" value="table">
+        <input type="hidden" name="_next" value="https://yourwebsite.com/gracias.html">
+        <input type="hidden" name="_captcha" value="false">
+        
+        <div id="form-success" class="form-message form-success">
+          <i class="fas fa-check-circle"></i> ¡Cita solicitada con éxito! Nos pondremos en contacto contigo pronto.
+        </div>
+        
+        <div id="form-error" class="form-message form-error">
+          <i class="fas fa-exclamation-circle"></i> Error al enviar. Por favor contáctanos directamente por WhatsApp.
+        </div>
+
+        <div class="form-group">
+          <label for="name">Nombre completo*</label>
+          <input type="text" id="name" name="name" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="phone">Teléfono*</label>
+          <input type="tel" id="phone" name="phone" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" class="form-control">
+        </div>
+        
+        <div class="form-group">
+          <label for="vehicle">Vehículo (Marca/Modelo)*</label>
+          <input type="text" id="vehicle" name="vehicle" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="service">Servicio requerido*</label>
+          <select id="service" name="service" class="form-control" required>
+            <option value="">Seleccione un servicio</option>
+            <option value="diagnostico">Diagnóstico Electrónico</option>
+            <option value="electrico">Sistema Eléctrico</option>
+            <option value="gps">Instalación GPS/Alarmas</option>
+            <option value="audio">Audio Multimedia</option>
+            <option value="otro">Otro servicio</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="date">Fecha preferida*</label>
+          <input type="date" id="date" name="date" class="form-control" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="message">Detalles adicionales</label>
+          <textarea id="message" name="message" rows="4" class="form-control"></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Solicitar Cita</button>
+      </form>
+      
+      <div style="text-align: center; margin-top: 30px;">
+        <p>O contáctanos directamente:</p>
+        <div style="display: flex; justify-content: center; gap: 15px; margin-top: 15px;">
+          <a href="https://wa.me/593991364216?text=Hola%20AutoCentro%20JBS,%20quisiera%20más%20información%20sobre%20sus%20servicios" class="whatsapp-btn" style="display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fab fa-whatsapp"></i> WhatsApp
+          </a>
+          <a href="tel:+593991364216" style="background: var(--primary); color: white; text-decoration: none; padding: 10px 20px; border-radius: 50px; display: inline-flex; align-items: center; gap: 8px;">
+            <i class="fas fa-phone-alt"></i> Llamar
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="promo-banner">
+    <h3 class="promo-title">¡Diagnóstico Gratis con Cita Previa!</h3>
+    <p class="promo-text">Nuestros expertos evaluarán tu vehículo sin costo y te darán un presupuesto transparente.</p>
+    <a href="#citas" class="promo-btn">
+      <i class="far fa-calendar-alt"></i> Agendar Cita
+    </a>
+  </div>
+
+  <section id="testimonios" style="background-color: #f8f9fa; padding: 60px 20px;">
+    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    <div class="testimonials">
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="María G." style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
+          <div>
+            <h4 style="margin: 0;">María González</h4>
+            <div class="testimonial-rating">
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-text">"Excelente servicio! Repararon mi sistema eléctrico en menos de un día y con garantía. El personal fue muy amable y profesional. Definitivamente volveré."</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos M." style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
+          <div>
+            <h4 style="margin: 0;">Carlos Mendoza</h4>
+            <div class="testimonial-rating">
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-text">"Instalaron un GPS en mi camioneta y el trabajo fue impecable. Precios justos y explicaron todo el funcionamiento. Muy recomendados!"</p>
+      </div>
+      
+      <div class="testimonial-card">
+        <div class="testimonial-header">
+          <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Patricia R." style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 15px;">
+          <div>
+            <h4 style="margin: 0;">Patricia Rojas</h4>
+            <div class="testimonial-rating">
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star" style="color: #FFC107;"></i>
+              <i class="fas fa-star-half-alt" style="color: #FFC107;"></i>
+            </div>
+          </div>
+        </div>
+        <p class="testimonial-text">"Solucionaron un problema eléctrico que otros talleres no pudieron diagnosticar. El único detalle fue que tardaron un poco más de lo esperado, pero valió la pena."</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="nosotros">
+    <h2 class="section-title">¿Por qué elegirnos?</h2>
+    <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+      <p>En AutoCentro JBS combinamos <strong>tecnología de punta</strong> con <strong>años de experiencia</strong> para ofrecerte el mejor servicio en electrónica automotriz.</p>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; margin-top: 40px;">
+        <div>
+          <div style="background-color: var(--accent); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+            <i class="fas fa-certificate" style="font-size: 1.5rem; color: #333;"></i>
+          </div>
+          <h3 style="color: var(--primary);">Técnicos Certificados</h3>
+          <p>Profesionales capacitados por las mejores marcas</p>
+        </div>
+        
+        <div>
+          <div style="background-color: var(--accent); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+            <i class="fas fa-shield-alt" style="font-size: 1.5rem; color: #333;"></i>
+          </div>
+          <h3 style="color: var(--primary);">Garantía por Escrito</h3>
+          <p>Todos nuestros servicios incluyen garantía</p>
+        </div>
+        
+        <div>
+          <div style="background-color: var(--accent); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+            <i class="fas fa-tools" style="font-size: 1.5rem; color: #333;"></i>
+          </div>
+          <h3 style="color: var(--primary);">Equipos Modernos</h3>
+          <p>Tecnología de diagnóstico actualizada</p>
+        </div>
+        
+        <div>
+          <div style="background-color: var(--accent); width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 15px;">
+            <i class="fas fa-clock" style="font-size: 1.5rem; color: #333;"></i>
+          </div>
+          <h3 style="color: var(--primary);">Servicio Rápido</h3>
+          <p>Diagnóstico preciso en menos tiempo</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto" style="background-color: var(--primary); color: white; padding: 60px 20px;">
+    <div style="max-width: 1000px; margin: 0 auto; text-align: center;">
+      <h2 class="section-title" style="color: white;">Visítanos en nuestro taller</h2>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; text-align: left;">
+        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px;">
+          <h3 style="margin-top: 0; display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-map-marker-alt"></i> Dirección
+          </h3>
+          <p>Av. de la Prensa 5190, Quito 170104</p>
+          <p><em>(Frente al Parque Bicentenario, sector norte)</em></p>
+          
+          <div style="margin-top: 20px;">
+            <a href="https://goo.gl/maps/7J9J5J5J5J5J5J5J5" style="background: var(--accent); color: #333; text-decoration: none; padding: 10px 20px; border-radius: 5px; display: inline-flex; align-items: center; gap: 8px; font-weight: bold;">
+              <i class="fas fa-directions"></i> Cómo llegar
+            </a>
+          </div>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px;">
+          <h3 style="margin-top: 0; display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-clock"></i> Horario de atención
+          </h3>
+          
+          <div style="margin-top: 20px;">
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+              <span>Lunes a Viernes</span>
+              <span style="font-weight: bold;">9:00 AM - 6:00 PM</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid rgba(255,255,255,0.2);">
+              <span>Sábados</span>
+              <span style="font-weight: bold;">9:00 AM - 2:00 PM</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; padding: 10px 0;">
+              <span>Domingos</span>
+              <span style="font-weight: bold;">Cerrado</span>
+            </div>
+          </div>
+        </div>
+        
+        <div style="background: rgba(255,255,255,0.1); padding: 30px; border-radius: 10px;">
+          <h3 style="margin-top: 0; display: flex; align-items: center; gap: 10px;">
+            <i class="fas fa-phone-alt"></i> Contacto
+          </h3>
+          
+          <div style="margin-top: 20px;">
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+              <div style="background: var(--accent); color: #333; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div>
+                <div style="font-size: 0.9rem; opacity: 0.8;">Teléfono</div>
+                <div style="font-weight: bold;">099 136 4216</div>
+              </div>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+              <div style="background: #25D366; color: white; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="fab fa-whatsapp"></i>
+              </div>
+              <div>
+                <div style="font-size: 0.9rem; opacity: 0.8;">WhatsApp</div>
+                <div style="font-weight: bold;">099 136 4216</div>
+              </div>
+            </div>
+            
+            <div style="display: flex; align-items: center; gap: 15px;">
+              <div style="background: var(--accent); color: #333; width: 40px; height: 40px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <div style="font-size: 0.9rem; opacity: 0.8;">Correo electrónico</div>
+                <div style="font-weight: bold;">jbsautoservicio@gmail.com</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="padding: 0;">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.795520038196!2d-78.467834!3d-0.180653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a3b4d1e3b1f%3A0x9c7d5e5b5e5b5e5b!2sAv.%20de%20la%20Prensa%205190%2C%20Quito%20170104!5e0!3m2!1ses!2sec!4v1620000000000!5m2!1ses!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <div class="footer-about">
+        <img src="02e34cb5-7b39-4f10-ab05-c50dc37df2f0.jfif" alt="AutoCentro JBS" class="footer-logo">
+        <p>Especialistas en electrónica automotriz en Quito. Ofrecemos servicios de reparación, diagnóstico e instalación con los más altos estándares de calidad.</p>
+        
+        <div class="social-links">
+          <a href="https://www.facebook.com/profile.php?id=61576233142151" class="social-link facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://www.instagram.com/jbsautoservicio/" class="social-link instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@jbsautoservicio1" class="social-link tiktok" target="_blank"><i class="fab fa-tiktok"></i></a>
+          <a href="https://wa.me/593991364216" class="social-link whatsapp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      
+      <div class="footer-links">
+        <h3>Servicios</h3>
+        <ul>
+          <li><a href="#servicios">Diagnóstico electrónico</a></li>
+          <li><a href="#servicios">Reparación eléctrica</a></li>
+          <li><a href="#servicios">Instalación de GPS</a></li>
+          <li><a href="#servicios">Sistemas de alarmas</a></li>
+          <li><a href="#servicios">Audio vehicular</a></li>
+        </ul>
+      </div>
+      
+      <div class="footer-contact">
+        <h3>Contacto</h3>
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div>
+            <p>Av. de la Prensa 5190<br>Quito 170104</p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-phone-alt"></i>
+          </div>
+          <div>
+            <p><a href="tel:+593991364216" style="color: var(--gray); text-decoration: none;">099 136 4216</a></p>
+          </div>
+        </div>
+        
+        <div class="contact-item">
+          <div class="contact-icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div>
+            <p><a href="mailto:jbsautoservicio@gmail.com" style="color: var(--gray); text-decoration: none;">jbsautoservicio@gmail.com</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="copyright">
+      <p>&copy; 2023 AutoCentro JBS. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <!-- Chat de WhatsApp mejorado -->
+  <a href="https://wa.me/593991364216?text=Hola%20AutoCentro%20JBS,%20tengo%20una%20consulta" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <!-- Asistente Virtual -->
+  <div id="chatbot-container">
+    <div>
+      <h4>Asistente Virtual JBS</h4>
+      <button id="close-chatbot">×</button>
+    </div>
+    <div id="chatbot-messages">
+      <div>
+        <p>¡Hola! Soy el asistente virtual de AutoCentro JBS. ¿En qué puedo ayudarte hoy?</p>
+      </div>
+    </div>
+    <div id="chatbot-input-container">
+      <input type="text" id="chatbot-input" placeholder="Escribe tu pregunta...">
+      <button id="send-chatbot">Enviar</button>
+    </div>
+  </div>
+
+  <button id="open-chatbot">
+    <i class="fas fa-robot"></i>
+  </button>
+
+  <script>
+    // Asistente Virtual
+    const chatbotContainer = document.getElementById('chatbot-container');
+    const openChatbot = document.getElementById('open-chatbot');
+    const closeChatbot = document.getElementById('close-chatbot');
+    const chatbotMessages = document.getElementById('chatbot-messages');
+    const chatbotInput = document.getElementById('chatbot-input');
+    const sendChatbot = document.getElementById('send-chatbot');
+
+    openChatbot.addEventListener('click', () => {
+      chatbotContainer.style.display = 'block';
+    });
+
+    closeChatbot.addEventListener('click', () => {
+      chatbotContainer.style.display = 'none';
+    });
+
+    function addBotMessage(text) {
+      const messageDiv = document.createElement('div');
+      messageDiv.style.background = '#f1f1f1';
+      messageDiv.style.padding = '10px';
+      messageDiv.style.borderRadius = '5px';
+      messageDiv.style.marginBottom = '10px';
+      messageDiv.style.maxWidth = '80%';
+      
+      const messageP = document.createElement('p');
+      messageP.style.margin = '0';
+      messageP.textContent = text;
+      
+      messageDiv.appendChild(messageP);
+      chatbotMessages.appendChild(messageDiv);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    function addUserMessage(text) {
+      const messageDiv = document.createElement('div');
+      messageDiv.style.background = 'var(--primary)';
+      messageDiv.style.color = 'white';
+      messageDiv.style.padding = '10px';
+      messageDiv.style.borderRadius = '5px';
+      messageDiv.style.marginBottom = '10px';
+      messageDiv.style.maxWidth = '80%';
+      messageDiv.style.marginLeft = 'auto';
+      
+      const messageP = document.createElement('p');
+      messageP.style.margin = '0';
+      messageP.textContent = text;
+      
+      messageDiv.appendChild(messageP);
+      chatbotMessages.appendChild(messageDiv);
+      chatbotMessages.scrollTop = chatbotMessages.scrollHeight;
+    }
+
+    sendChatbot.addEventListener('click', () => {
+      const message = chatbotInput.value.trim();
+      if (message) {
+        addUserMessage(message);
+        chatbotInput.value = '';
+        
+        // Respuestas automatizadas
+        setTimeout(() => {
+          if (message.toLowerCase().includes('horario') || message.toLowerCase().includes('hora')) {
+            addBotMessage('Nuestro horario de atención es de Lunes a Viernes de 9:00 AM a 6:00 PM y Sábados de 9:00 AM a 2:00 PM.');
+          } else if (message.toLowerCase().includes('dirección') || message.toLowerCase().includes('ubicación')) {
+            addBotMessage('Estamos ubicados en Av. de la Prensa 5190, Quito 170104, frente al Parque Bicentenario.');
+          } else if (message.toLowerCase().includes('servicio') || message.toLowerCase().includes('reparación')) {
+            addBotMessage('Ofrecemos servicios de electrónica automotriz, diagnóstico computarizado, instalación de GPS y alarmas, y reparación de sistemas eléctricos. ¿Te gustaría agendar una cita?');
+          } else if (message.toLowerCase().includes('precio') || message.toLowerCase().includes('costo')) {
+            addBotMessage('Los precios varían según el servicio requerido. Para un presupuesto exacto, te recomiendo contactarnos al 099 136 4216 o agendar una cita de diagnóstico gratuito.');
+          } else {
+            addBotMessage('Para una atención más personalizada, puedes contactarnos directamente por WhatsApp al 099 136 4216 o visitarnos en nuestro taller.');
+          }
+        }, 800);
+      }
+    });
+
+    chatbotInput.addEventListener('keypress', (e) => {
+      if (e.key === 'Enter') {
+        sendChatbot.click();
+      }
+    });
+
+    // Formulario de contacto
+    document.getElementById('appointmentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const form = e.target;
+      
+      // Validación
+      const requiredFields = ['name', 'phone', 'vehicle', 'service', 'date'];
+      let isValid = true;
+      
+      requiredFields.forEach(field => {
+        const element = document.getElementById(field);
+        if (!element.value.trim()) {
+          isValid = false;
+          element.style.borderColor = 'red';
+        } else {
+          element.style.borderColor = '#ddd';
+        }
+      });
+      
+      if (!isValid) {
+        document.getElementById('form-error').style.display = 'block';
+        document.getElementById('form-error').innerHTML = 
+          '<i class="fas fa-exclamation-circle"></i> Por favor complete todos los campos obligatorios marcados en rojo.';
+        return;
+      }
+      
+      // Envío del formulario
+      fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: {
+          'Accept': 'application/json'
+        }
+      })
+      .then(response => {
+        if (response.ok) {
+          document.getElementById('form-success').style.display = 'block';
+          form.reset();
+        } else {
+          throw new Error('Error en el envío');
+        }
+      })
+      .catch(error => {
+        document.getElementById('form-error').style.display = 'block';
+        console.error('Error:', error);
+      });
+    });
+  </script>
+</body>
+</html>
